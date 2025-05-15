@@ -1,0 +1,1202 @@
+[
+  {
+    "uid": "A001",
+    "level": "A",
+    "name": "Going to the Grocery Store (A)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A002",
+    "level": "A",
+    "name": "Taking a Bus (A)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A003",
+    "level": "A",
+    "name": "Going to the Doctor (A)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A004",
+    "level": "A",
+    "name": "Watching a Movie at the Cinema (A)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A005",
+    "level": "A",
+    "name": "Attending a Concert (A)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A006",
+    "level": "A",
+    "name": "Visiting the Library (A)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A007",
+    "level": "A",
+    "name": "Going to the Grocery Store (A)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A008",
+    "level": "A",
+    "name": "Taking a Bus (A)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A009",
+    "level": "A",
+    "name": "Going to the Doctor (A)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A010",
+    "level": "A",
+    "name": "Watching a Movie at the Cinema (A)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A011",
+    "level": "A",
+    "name": "Attending a Concert (A)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A012",
+    "level": "A",
+    "name": "Visiting the Library (A)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A013",
+    "level": "A",
+    "name": "Going to the Grocery Store (A)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A014",
+    "level": "A",
+    "name": "Taking a Bus (A)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A015",
+    "level": "A",
+    "name": "Going to the Doctor (A)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A016",
+    "level": "A",
+    "name": "Watching a Movie at the Cinema (A)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A017",
+    "level": "A",
+    "name": "Attending a Concert (A)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A018",
+    "level": "A",
+    "name": "Visiting the Library (A)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A019",
+    "level": "B",
+    "name": "Going to the Grocery Store (B)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A020",
+    "level": "B",
+    "name": "Taking a Bus (B)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A021",
+    "level": "B",
+    "name": "Going to the Doctor (B)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A022",
+    "level": "B",
+    "name": "Watching a Movie at the Cinema (B)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A023",
+    "level": "B",
+    "name": "Attending a Concert (B)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A024",
+    "level": "B",
+    "name": "Visiting the Library (B)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A025",
+    "level": "B",
+    "name": "Going to the Grocery Store (B)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A026",
+    "level": "B",
+    "name": "Taking a Bus (B)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A027",
+    "level": "B",
+    "name": "Going to the Doctor (B)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A028",
+    "level": "B",
+    "name": "Watching a Movie at the Cinema (B)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A029",
+    "level": "B",
+    "name": "Attending a Concert (B)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A030",
+    "level": "B",
+    "name": "Visiting the Library (B)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A031",
+    "level": "B",
+    "name": "Going to the Grocery Store (B)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A032",
+    "level": "B",
+    "name": "Taking a Bus (B)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A033",
+    "level": "B",
+    "name": "Going to the Doctor (B)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A034",
+    "level": "B",
+    "name": "Watching a Movie at the Cinema (B)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A035",
+    "level": "B",
+    "name": "Attending a Concert (B)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A036",
+    "level": "B",
+    "name": "Visiting the Library (B)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A037",
+    "level": "C",
+    "name": "Going to the Grocery Store (C)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A038",
+    "level": "C",
+    "name": "Taking a Bus (C)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A039",
+    "level": "C",
+    "name": "Going to the Doctor (C)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A040",
+    "level": "C",
+    "name": "Watching a Movie at the Cinema (C)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A041",
+    "level": "C",
+    "name": "Attending a Concert (C)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A042",
+    "level": "C",
+    "name": "Visiting the Library (C)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A043",
+    "level": "C",
+    "name": "Going to the Grocery Store (C)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A044",
+    "level": "C",
+    "name": "Taking a Bus (C)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "A045",
+    "level": "C",
+    "name": "Going to the Doctor (C)",
+    "description": [
+      "You feel sick and book an appointment.",
+      "You tell the doctor about your symptoms.",
+      "The doctor checks your temperature and heartbeat.",
+      "You receive advice and maybe a prescription.",
+      "You thank the doctor and leave the clinic."
+    ]
+  },
+  {
+    "uid": "A046",
+    "level": "C",
+    "name": "Watching a Movie at the Cinema (C)",
+    "description": [
+      "You choose a film and buy a ticket online or at the counter.",
+      "You buy popcorn and a drink before going in.",
+      "You find your seat and wait for the movie to start.",
+      "You enjoy the movie with other people.",
+      "You talk about the movie afterward with friends."
+    ]
+  },
+  {
+    "uid": "A047",
+    "level": "C",
+    "name": "Attending a Concert (C)",
+    "description": [
+      "You buy a ticket to see your favorite band.",
+      "You arrive early to get a good spot.",
+      "You sing along and enjoy the music.",
+      "You take pictures and videos of the event.",
+      "You leave with great memories of the night."
+    ]
+  },
+  {
+    "uid": "A048",
+    "level": "C",
+    "name": "Visiting the Library (C)",
+    "description": [
+      "You go to borrow or return a book.",
+      "You use your library card to check out books.",
+      "You sit and read quietly in a study area.",
+      "You ask a librarian for help finding a book.",
+      "You return the book on time to avoid a fine."
+    ]
+  },
+  {
+    "uid": "A049",
+    "level": "C",
+    "name": "Going to the Grocery Store (C)",
+    "description": [
+      "You need to buy food for the week.",
+      "You make a shopping list with common items.",
+      "At the store, you ask for help finding products.",
+      "You talk to the cashier and pay for your items.",
+      "You pack your groceries and leave the store."
+    ]
+  },
+  {
+    "uid": "A050",
+    "level": "C",
+    "name": "Taking a Bus (C)",
+    "description": [
+      "You wait at the bus stop with other people.",
+      "You check the route and timetable before boarding.",
+      "You ask the driver where the bus is going.",
+      "You find a seat and listen to announcements.",
+      "You press the button to stop at your destination."
+    ]
+  },
+  {
+    "uid": "B001",
+    "level": "B",
+    "name": "Visiting a local museum",
+    "description": [
+      "You decide to visit a nearby museum on a weekend.",
+      "You buy a ticket at the entrance and grab a map.",
+      "You walk through exhibitions of local history and art.",
+      "You ask questions to the guide about certain artifacts.",
+      "You spend a few hours there and stop by the souvenir shop."
+    ]
+  },
+  {
+    "uid": "C001",
+    "level": "C",
+    "name": "Debating environmental policies",
+    "description": [
+      "You join a discussion about recent climate policy proposals.",
+      "Participants bring different perspectives and data.",
+      "You contribute by questioning current regulations.",
+      "You compare policies from other countries.",
+      "You summarize the discussion in a follow-up blog post."
+    ]
+  },
+  {
+    "uid": "B002",
+    "level": "B",
+    "name": "Booking a hotel room",
+    "description": [
+      "You need to book a hotel for your upcoming trip.",
+      "You call the hotel and ask about availability and rates.",
+      "You ask about amenities like breakfast and Wi-Fi.",
+      "You reserve a double room for three nights.",
+      "You receive a confirmation email after the call."
+    ]
+  },
+  {
+    "uid": "C002",
+    "level": "C",
+    "name": "Negotiating a job offer",
+    "description": [
+      "You receive a job offer from a company you've interviewed with.",
+      "You discuss salary expectations with HR.",
+      "You ask about career development and training opportunities.",
+      "You bring up relocation costs and work-life balance.",
+      "You reach an agreement and sign the contract."
+    ]
+  },
+  {
+    "uid": "B003",
+    "level": "B",
+    "name": "Going to a pharmacy",
+    "description": [
+      "You feel unwell and go to the local pharmacy.",
+      "You explain your symptoms to the pharmacist.",
+      "The pharmacist recommends some over-the-counter medicine.",
+      "You also ask about any side effects.",
+      "You pay and follow the instructions on the label."
+    ]
+  },
+  {
+    "uid": "C003",
+    "level": "C",
+    "name": "Writing a formal complaint",
+    "description": [
+      "You experienced poor service at a restaurant.",
+      "You decide to write a formal complaint email to management.",
+      "You explain the issue clearly and politely.",
+      "You include dates, names, and what you expect as a resolution.",
+      "You receive an apology and a voucher for your next visit."
+    ]
+  },
+  {
+    "uid": "B004",
+    "level": "B",
+    "name": "Getting a haircut",
+    "description": [
+      "You visit a nearby salon to get a haircut.",
+      "You explain the style you want to the hairdresser.",
+      "You chat while the haircut is happening.",
+      "You ask about products for your hair type.",
+      "You tip and thank the stylist before leaving."
+    ]
+  },
+  {
+    "uid": "C004",
+    "level": "C",
+    "name": "Discussing a book in a reading group",
+    "description": [
+      "You're part of a monthly reading club.",
+      "This week\u2019s book deals with complex social issues.",
+      "You prepare comments on character development and plot.",
+      "During the session, you analyze metaphors and symbolism.",
+      "You suggest a related book for next month."
+    ]
+  },
+  {
+    "uid": "B005",
+    "level": "B",
+    "name": "Attending a community event",
+    "description": [
+      "You hear about a cultural event at the local community center.",
+      "You invite a friend and go together.",
+      "There are performances, food stalls, and local crafts.",
+      "You interact with locals and learn about their traditions.",
+      "You enjoy live music and take photos."
+    ]
+  },
+  {
+    "uid": "C005",
+    "level": "C",
+    "name": "Participating in a panel interview",
+    "description": [
+      "You\u2019re invited to a final round panel interview.",
+      "Multiple interviewers ask about technical and soft skills.",
+      "You explain your project experience with examples.",
+      "You respond to hypothetical situations with confidence.",
+      "You thank the panel and follow up via email."
+    ]
+  },
+  {
+    "uid": "B006",
+    "level": "B",
+    "name": "Visiting a local museum",
+    "description": [
+      "You decide to visit a nearby museum on a weekend.",
+      "You buy a ticket at the entrance and grab a map.",
+      "You walk through exhibitions of local history and art.",
+      "You ask questions to the guide about certain artifacts.",
+      "You spend a few hours there and stop by the souvenir shop."
+    ]
+  },
+  {
+    "uid": "C006",
+    "level": "C",
+    "name": "Debating environmental policies",
+    "description": [
+      "You join a discussion about recent climate policy proposals.",
+      "Participants bring different perspectives and data.",
+      "You contribute by questioning current regulations.",
+      "You compare policies from other countries.",
+      "You summarize the discussion in a follow-up blog post."
+    ]
+  },
+  {
+    "uid": "B007",
+    "level": "B",
+    "name": "Booking a hotel room",
+    "description": [
+      "You need to book a hotel for your upcoming trip.",
+      "You call the hotel and ask about availability and rates.",
+      "You ask about amenities like breakfast and Wi-Fi.",
+      "You reserve a double room for three nights.",
+      "You receive a confirmation email after the call."
+    ]
+  },
+  {
+    "uid": "C007",
+    "level": "C",
+    "name": "Negotiating a job offer",
+    "description": [
+      "You receive a job offer from a company you've interviewed with.",
+      "You discuss salary expectations with HR.",
+      "You ask about career development and training opportunities.",
+      "You bring up relocation costs and work-life balance.",
+      "You reach an agreement and sign the contract."
+    ]
+  },
+  {
+    "uid": "B008",
+    "level": "B",
+    "name": "Going to a pharmacy",
+    "description": [
+      "You feel unwell and go to the local pharmacy.",
+      "You explain your symptoms to the pharmacist.",
+      "The pharmacist recommends some over-the-counter medicine.",
+      "You also ask about any side effects.",
+      "You pay and follow the instructions on the label."
+    ]
+  },
+  {
+    "uid": "C008",
+    "level": "C",
+    "name": "Writing a formal complaint",
+    "description": [
+      "You experienced poor service at a restaurant.",
+      "You decide to write a formal complaint email to management.",
+      "You explain the issue clearly and politely.",
+      "You include dates, names, and what you expect as a resolution.",
+      "You receive an apology and a voucher for your next visit."
+    ]
+  },
+  {
+    "uid": "B009",
+    "level": "B",
+    "name": "Getting a haircut",
+    "description": [
+      "You visit a nearby salon to get a haircut.",
+      "You explain the style you want to the hairdresser.",
+      "You chat while the haircut is happening.",
+      "You ask about products for your hair type.",
+      "You tip and thank the stylist before leaving."
+    ]
+  },
+  {
+    "uid": "C009",
+    "level": "C",
+    "name": "Discussing a book in a reading group",
+    "description": [
+      "You're part of a monthly reading club.",
+      "This week\u2019s book deals with complex social issues.",
+      "You prepare comments on character development and plot.",
+      "During the session, you analyze metaphors and symbolism.",
+      "You suggest a related book for next month."
+    ]
+  },
+  {
+    "uid": "B010",
+    "level": "B",
+    "name": "Attending a community event",
+    "description": [
+      "You hear about a cultural event at the local community center.",
+      "You invite a friend and go together.",
+      "There are performances, food stalls, and local crafts.",
+      "You interact with locals and learn about their traditions.",
+      "You enjoy live music and take photos."
+    ]
+  },
+  {
+    "uid": "C010",
+    "level": "C",
+    "name": "Participating in a panel interview",
+    "description": [
+      "You\u2019re invited to a final round panel interview.",
+      "Multiple interviewers ask about technical and soft skills.",
+      "You explain your project experience with examples.",
+      "You respond to hypothetical situations with confidence.",
+      "You thank the panel and follow up via email."
+    ]
+  },
+  {
+    "uid": "B011",
+    "level": "B",
+    "name": "Visiting a local museum",
+    "description": [
+      "You decide to visit a nearby museum on a weekend.",
+      "You buy a ticket at the entrance and grab a map.",
+      "You walk through exhibitions of local history and art.",
+      "You ask questions to the guide about certain artifacts.",
+      "You spend a few hours there and stop by the souvenir shop."
+    ]
+  },
+  {
+    "uid": "C011",
+    "level": "C",
+    "name": "Debating environmental policies",
+    "description": [
+      "You join a discussion about recent climate policy proposals.",
+      "Participants bring different perspectives and data.",
+      "You contribute by questioning current regulations.",
+      "You compare policies from other countries.",
+      "You summarize the discussion in a follow-up blog post."
+    ]
+  },
+  {
+    "uid": "B012",
+    "level": "B",
+    "name": "Booking a hotel room",
+    "description": [
+      "You need to book a hotel for your upcoming trip.",
+      "You call the hotel and ask about availability and rates.",
+      "You ask about amenities like breakfast and Wi-Fi.",
+      "You reserve a double room for three nights.",
+      "You receive a confirmation email after the call."
+    ]
+  },
+  {
+    "uid": "C012",
+    "level": "C",
+    "name": "Negotiating a job offer",
+    "description": [
+      "You receive a job offer from a company you've interviewed with.",
+      "You discuss salary expectations with HR.",
+      "You ask about career development and training opportunities.",
+      "You bring up relocation costs and work-life balance.",
+      "You reach an agreement and sign the contract."
+    ]
+  },
+  {
+    "uid": "B013",
+    "level": "B",
+    "name": "Going to a pharmacy",
+    "description": [
+      "You feel unwell and go to the local pharmacy.",
+      "You explain your symptoms to the pharmacist.",
+      "The pharmacist recommends some over-the-counter medicine.",
+      "You also ask about any side effects.",
+      "You pay and follow the instructions on the label."
+    ]
+  },
+  {
+    "uid": "C013",
+    "level": "C",
+    "name": "Writing a formal complaint",
+    "description": [
+      "You experienced poor service at a restaurant.",
+      "You decide to write a formal complaint email to management.",
+      "You explain the issue clearly and politely.",
+      "You include dates, names, and what you expect as a resolution.",
+      "You receive an apology and a voucher for your next visit."
+    ]
+  },
+  {
+    "uid": "B014",
+    "level": "B",
+    "name": "Getting a haircut",
+    "description": [
+      "You visit a nearby salon to get a haircut.",
+      "You explain the style you want to the hairdresser.",
+      "You chat while the haircut is happening.",
+      "You ask about products for your hair type.",
+      "You tip and thank the stylist before leaving."
+    ]
+  },
+  {
+    "uid": "C014",
+    "level": "C",
+    "name": "Discussing a book in a reading group",
+    "description": [
+      "You're part of a monthly reading club.",
+      "This week\u2019s book deals with complex social issues.",
+      "You prepare comments on character development and plot.",
+      "During the session, you analyze metaphors and symbolism.",
+      "You suggest a related book for next month."
+    ]
+  },
+  {
+    "uid": "B015",
+    "level": "B",
+    "name": "Attending a community event",
+    "description": [
+      "You hear about a cultural event at the local community center.",
+      "You invite a friend and go together.",
+      "There are performances, food stalls, and local crafts.",
+      "You interact with locals and learn about their traditions.",
+      "You enjoy live music and take photos."
+    ]
+  },
+  {
+    "uid": "C015",
+    "level": "C",
+    "name": "Participating in a panel interview",
+    "description": [
+      "You\u2019re invited to a final round panel interview.",
+      "Multiple interviewers ask about technical and soft skills.",
+      "You explain your project experience with examples.",
+      "You respond to hypothetical situations with confidence.",
+      "You thank the panel and follow up via email."
+    ]
+  },
+  {
+    "uid": "B016",
+    "level": "B",
+    "name": "Visiting a local museum",
+    "description": [
+      "You decide to visit a nearby museum on a weekend.",
+      "You buy a ticket at the entrance and grab a map.",
+      "You walk through exhibitions of local history and art.",
+      "You ask questions to the guide about certain artifacts.",
+      "You spend a few hours there and stop by the souvenir shop."
+    ]
+  },
+  {
+    "uid": "C016",
+    "level": "C",
+    "name": "Debating environmental policies",
+    "description": [
+      "You join a discussion about recent climate policy proposals.",
+      "Participants bring different perspectives and data.",
+      "You contribute by questioning current regulations.",
+      "You compare policies from other countries.",
+      "You summarize the discussion in a follow-up blog post."
+    ]
+  },
+  {
+    "uid": "B017",
+    "level": "B",
+    "name": "Booking a hotel room",
+    "description": [
+      "You need to book a hotel for your upcoming trip.",
+      "You call the hotel and ask about availability and rates.",
+      "You ask about amenities like breakfast and Wi-Fi.",
+      "You reserve a double room for three nights.",
+      "You receive a confirmation email after the call."
+    ]
+  },
+  {
+    "uid": "C017",
+    "level": "C",
+    "name": "Negotiating a job offer",
+    "description": [
+      "You receive a job offer from a company you've interviewed with.",
+      "You discuss salary expectations with HR.",
+      "You ask about career development and training opportunities.",
+      "You bring up relocation costs and work-life balance.",
+      "You reach an agreement and sign the contract."
+    ]
+  },
+  {
+    "uid": "B018",
+    "level": "B",
+    "name": "Going to a pharmacy",
+    "description": [
+      "You feel unwell and go to the local pharmacy.",
+      "You explain your symptoms to the pharmacist.",
+      "The pharmacist recommends some over-the-counter medicine.",
+      "You also ask about any side effects.",
+      "You pay and follow the instructions on the label."
+    ]
+  },
+  {
+    "uid": "C018",
+    "level": "C",
+    "name": "Writing a formal complaint",
+    "description": [
+      "You experienced poor service at a restaurant.",
+      "You decide to write a formal complaint email to management.",
+      "You explain the issue clearly and politely.",
+      "You include dates, names, and what you expect as a resolution.",
+      "You receive an apology and a voucher for your next visit."
+    ]
+  },
+  {
+    "uid": "B019",
+    "level": "B",
+    "name": "Getting a haircut",
+    "description": [
+      "You visit a nearby salon to get a haircut.",
+      "You explain the style you want to the hairdresser.",
+      "You chat while the haircut is happening.",
+      "You ask about products for your hair type.",
+      "You tip and thank the stylist before leaving."
+    ]
+  },
+  {
+    "uid": "C019",
+    "level": "C",
+    "name": "Discussing a book in a reading group",
+    "description": [
+      "You're part of a monthly reading club.",
+      "This week\u2019s book deals with complex social issues.",
+      "You prepare comments on character development and plot.",
+      "During the session, you analyze metaphors and symbolism.",
+      "You suggest a related book for next month."
+    ]
+  },
+  {
+    "uid": "B020",
+    "level": "B",
+    "name": "Attending a community event",
+    "description": [
+      "You hear about a cultural event at the local community center.",
+      "You invite a friend and go together.",
+      "There are performances, food stalls, and local crafts.",
+      "You interact with locals and learn about their traditions.",
+      "You enjoy live music and take photos."
+    ]
+  },
+  {
+    "uid": "C020",
+    "level": "C",
+    "name": "Participating in a panel interview",
+    "description": [
+      "You\u2019re invited to a final round panel interview.",
+      "Multiple interviewers ask about technical and soft skills.",
+      "You explain your project experience with examples.",
+      "You respond to hypothetical situations with confidence.",
+      "You thank the panel and follow up via email."
+    ]
+  },
+  {
+    "uid": "B021",
+    "level": "B",
+    "name": "Visiting a local museum",
+    "description": [
+      "You decide to visit a nearby museum on a weekend.",
+      "You buy a ticket at the entrance and grab a map.",
+      "You walk through exhibitions of local history and art.",
+      "You ask questions to the guide about certain artifacts.",
+      "You spend a few hours there and stop by the souvenir shop."
+    ]
+  },
+  {
+    "uid": "C021",
+    "level": "C",
+    "name": "Debating environmental policies",
+    "description": [
+      "You join a discussion about recent climate policy proposals.",
+      "Participants bring different perspectives and data.",
+      "You contribute by questioning current regulations.",
+      "You compare policies from other countries.",
+      "You summarize the discussion in a follow-up blog post."
+    ]
+  },
+  {
+    "uid": "B022",
+    "level": "B",
+    "name": "Booking a hotel room",
+    "description": [
+      "You need to book a hotel for your upcoming trip.",
+      "You call the hotel and ask about availability and rates.",
+      "You ask about amenities like breakfast and Wi-Fi.",
+      "You reserve a double room for three nights.",
+      "You receive a confirmation email after the call."
+    ]
+  },
+  {
+    "uid": "C022",
+    "level": "C",
+    "name": "Negotiating a job offer",
+    "description": [
+      "You receive a job offer from a company you've interviewed with.",
+      "You discuss salary expectations with HR.",
+      "You ask about career development and training opportunities.",
+      "You bring up relocation costs and work-life balance.",
+      "You reach an agreement and sign the contract."
+    ]
+  },
+  {
+    "uid": "B023",
+    "level": "B",
+    "name": "Going to a pharmacy",
+    "description": [
+      "You feel unwell and go to the local pharmacy.",
+      "You explain your symptoms to the pharmacist.",
+      "The pharmacist recommends some over-the-counter medicine.",
+      "You also ask about any side effects.",
+      "You pay and follow the instructions on the label."
+    ]
+  },
+  {
+    "uid": "C023",
+    "level": "C",
+    "name": "Writing a formal complaint",
+    "description": [
+      "You experienced poor service at a restaurant.",
+      "You decide to write a formal complaint email to management.",
+      "You explain the issue clearly and politely.",
+      "You include dates, names, and what you expect as a resolution.",
+      "You receive an apology and a voucher for your next visit."
+    ]
+  },
+  {
+    "uid": "B024",
+    "level": "B",
+    "name": "Getting a haircut",
+    "description": [
+      "You visit a nearby salon to get a haircut.",
+      "You explain the style you want to the hairdresser.",
+      "You chat while the haircut is happening.",
+      "You ask about products for your hair type.",
+      "You tip and thank the stylist before leaving."
+    ]
+  },
+  {
+    "uid": "C024",
+    "level": "C",
+    "name": "Discussing a book in a reading group",
+    "description": [
+      "You're part of a monthly reading club.",
+      "This week\u2019s book deals with complex social issues.",
+      "You prepare comments on character development and plot.",
+      "During the session, you analyze metaphors and symbolism.",
+      "You suggest a related book for next month."
+    ]
+  },
+  {
+    "uid": "B025",
+    "level": "B",
+    "name": "Attending a community event",
+    "description": [
+      "You hear about a cultural event at the local community center.",
+      "You invite a friend and go together.",
+      "There are performances, food stalls, and local crafts.",
+      "You interact with locals and learn about their traditions.",
+      "You enjoy live music and take photos."
+    ]
+  },
+  {
+    "uid": "C025",
+    "level": "C",
+    "name": "Participating in a panel interview",
+    "description": [
+      "You\u2019re invited to a final round panel interview.",
+      "Multiple interviewers ask about technical and soft skills.",
+      "You explain your project experience with examples.",
+      "You respond to hypothetical situations with confidence.",
+      "You thank the panel and follow up via email."
+    ]
+  }
+]

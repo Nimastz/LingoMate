@@ -1,0 +1,118 @@
+*{
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('./img/pic/lingo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px); /* Blur strength */
+    z-index: 0;
+  
+    /* Radial gradient mask */
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.1) 80%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.1) 80%);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1; /* Put above the blurred background */
+    border: 1px solid rgb(69, 56, 112);
+    border-radius: 10px;
+    width: 65%;
+    min-width: 500px;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+.formContainer{
+    background-color: rgb(6, 6, 6);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/pic/popular.jpg');
+    .formWrapper{
+        background-color: rgb(146, 146, 148);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 20px 60px;
+        gap: 10px;
+        font-size: 12px;
+
+        .logo{
+            font-weight:600;
+            font-size: 32px;
+            color: rgb(0, 0, 0);
+            font-style: italic;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .title{
+            color: rgb(27, 27, 27);
+            font-size: 16px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input {
+                font-size: 12px;
+                padding: 7px;
+                border-radius: 10px;
+                background-color: rgb(255, 255, 255);
+            }       
+            button{
+            background-color: rgb(175, 177, 176);
+            font-size: 12px;
+            padding: 7px;
+            border-radius: 10px;
+            }
+            button:hover{
+                background-color: rgb(8, 151, 46);
+            }
+
+        }
+        p{
+            color: rgb(255, 255, 255);
+            padding-top: 15px;
+            .link{
+                color: rgb(3, 88, 16);
+            }            
+        }
+    }
+}
+
+
+    
+
