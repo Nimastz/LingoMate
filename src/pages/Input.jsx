@@ -92,7 +92,7 @@ const Input = () => {
          or something that help user to practice gramer and words he learned while respond to you. 
       `;
       const result = await model.generateContent(topicPrompt);
-      const topic = result.response.text();
+      const topic = result.response.text().trim();
 
       const sessionMaterial= `
         -Session Material:
@@ -236,7 +236,7 @@ const Input = () => {
         date: now,
         sessionUID,
       };
-
+      setText("");
       await updateDoc(doc(db, "chats", data.chatId), {
         messages: arrayUnion(userMsg),
       });
@@ -283,7 +283,8 @@ const Input = () => {
         . if anything persoal are said that not violate the general rules. remmeber what major off topic user talks with you
         and in what level you know him and they know you. if you been intriduced befre, or know basic info about them
         it can be store in profile to make conversation more friendly and trusting. in summorization follow main 
-        general rules for storing private data and anything that is applicable in this case. 
+        general rules for storing private data and anything that is applicable in this case. in profile, mention what sesseion id and task is in progress. also menssion is the session is compelete successfully or not.
+        profile summary should always remain under 1000 words.
         Current profile: ${userProfile}
         lingoMate: ${lastAiMessage};
         User's message: ${text}
