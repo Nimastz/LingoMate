@@ -14,10 +14,39 @@ import scenarioData from '../data/scenario.json';
 const genAI = new GoogleGenerativeAI("AIzaSyDWpFANtQ8o83LJg2kN2N_jyzAsuCHDxEc");
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
+const speakText = (text) => {
+  if (!window.speechSynthesis) return;
+
+  window.speechSynthesis.cancel();
+
+  const sentences = text.match(/[^.!?]+[.!?]+[\])'"`’”]*|.+/g); // split by sentence
+  if (!sentences) return;
+
+  const speakNext = (index) => {
+    if (index >= sentences.length) return;
+
+    const utterance = new SpeechSynthesisUtterance(sentences[index].trim());
+    utterance.lang = 'de';
+    utterance.pitch = 1;
+    utterance.rate = 0.95;
+    utterance.volume = 1;
+
+    utterance.onend = () => {
+      speakNext(index + 1); // speak next sentence
+    };
+
+    window.speechSynthesis.speak(utterance);
+  };
+
+  speakNext(0);
+};
+
 const Input = () => {
   const [text, setText] = useState("");
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
+  const [voiceEnabled, setVoiceEnabled] = useState(true);
+
   // Check if currentUser is loaded
   if (!currentUser) {
     console.error("User data is not loaded yet.");
@@ -216,7 +245,7 @@ const Input = () => {
         const lastTime = lastMsg.date?.toDate ? lastMsg.date.toDate() : new Date(lastMsg.date);
         const minutesDiff = (now - lastTime) / (1000 * 60);
         
-        if (minutesDiff > 5) {
+        if (minutesDiff > 20) {
           sessionUID = uuid();
           isNewSession = true;
         } else {
@@ -284,7 +313,7 @@ const Input = () => {
         and in what level you know him and they know you. if you been intriduced befre, or know basic info about them
         it can be store in profile to make conversation more friendly and trusting. in summorization follow main 
         general rules for storing private data and anything that is applicable in this case. in profile, mention what sesseion id and task is in progress. also menssion is the session is compelete successfully or not.
-        profile summary should always remain under 1000 words.
+        profile summary should always remain under 500 words.
         Current profile: ${userProfile}
         lingoMate: ${lastAiMessage};
         User's message: ${text}
@@ -292,7 +321,7 @@ const Input = () => {
       
       // Send the prompt to Gemini to generate the updated profile
       const profileResult = await model.generateContent(profileSummaryPrompt);
-      const newProfileSummary = profileResult.response.text();
+      const newProfileSummary = profileResult.response.text().trim();
       // Save the updated profile to the user's profile field in Firestore
       await updateUserProfile(currentUser, newProfileSummary); 
       console.log("Profile summary:", newProfileSummary);
@@ -301,15 +330,18 @@ const Input = () => {
       const recentSummary = await getCurrentSessionSummary(sessionUID);
       
       const combineText = `
-      main rules:${mainRules}
-      Current profile: ${userProfile}
+      ${mainRules}
+      ${userProfile}
+      ${sessionRules}
       answer brifly to user mainly base on following info, respect to above rules generally:
-      lingoMate: ${lastAiMessage};
-      User: ${text}
+      ${recentSummary}
+      ${lastAiMessage};
+      ${text}
       `;
    
       const result = await model.generateContent(combineText);
-      const aiResponse = result.response.text();
+      const aiResponse = result.response.text().trim();
+      if (voiceEnabled) speakText(aiResponse);
       const otherUserId = data.chatId.replace(currentUser.uid, "");
       
       const aiMsg = {
@@ -333,6 +365,7 @@ const Input = () => {
     const currentSummary = await getCurrentSessionSummary(sessionUID);
         // Construct the full summary prompt
     const summaryPrompt = `
+    User pofile ${profileResult}
     main rules:${mainRules}
     summary rules:${sumRules}
     session rules:${sessionRules}

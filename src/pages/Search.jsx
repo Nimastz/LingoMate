@@ -1,15 +1,18 @@
-import React, { useState, useContext, useEffect, useRef } from 'react';
-import add from '../img/add.png';
-import { updateDoc, collection, query, setDoc, getDocs, where, doc, getDoc } from "firebase/firestore";
+import { useState, useContext, useEffect, useRef } from 'react';
+import { ChatContext } from '../context/ChatContext'
+import {
+  updateDoc, collection, query, setDoc, getDocs, where, doc, getDoc
+} from "firebase/firestore";
 import { db } from "../firebase";
 import { AuthContext } from '../context/AuthContext';
 
 const Search = () => {
   const [username, setUsername] = useState("");
-  const [user, setUser] = useState(null);
+  const [users, setUsers] = useState([]);
   const [err, setErr] = useState(false);
   const { currentUser } = useContext(AuthContext);
   const searchRef = useRef();
+  const {data} = useContext(ChatContext) 
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -17,64 +20,95 @@ const Search = () => {
         emptySearch();
       }
     };
-
     const handleEscape = (e) => {
       if (e.key === 'Escape') {
         emptySearch();
       }
     };
-
     document.addEventListener('mousedown', handleClickOutside);
     document.addEventListener('keydown', handleEscape);
-
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('keydown', handleEscape);
     };
   }, []);
 
-  const handleSearch = async () => {
+  const fetchAllUsers = async () => {
     try {
-      const q = query(collection(db, "users"), where("displayName", "==", username));
-      const querySnapshot = await getDocs(q);
-      querySnapshot.forEach((doc) => {
-        setUser(doc.data());
+      // Fetch users already in current user's chats
+      const userChatsDoc = await getDoc(doc(db, "userChats", currentUser.uid));
+      const existingChatUsers = userChatsDoc.exists()
+        ? Object.values(userChatsDoc.data()).map(chat => chat.userInfo.uid)
+        : [];
+
+      const allUsersSnapshot = await getDocs(collection(db, "users"));
+      const allUsers = [];
+
+      allUsersSnapshot.forEach(docSnap => {
+        const data = docSnap.data();
+        if (
+          data.uid !== currentUser.uid &&
+          !existingChatUsers.includes(data.uid)
+        ) {
+          allUsers.push(data);
+        }
       });
-      const res = await getDoc(doc(db, "chats", coId(currentUser.uid, user.uid)));
-      if (res.exists()) {
-        setUser(null);
-      }
-    } catch (err) {
+
+      console.log("📥 Fetched all users excluding current user and chat members");
+      setUsers(allUsers);
+    } catch (error) {
+      console.error("❌ Error fetching all users:", error);
       setErr(true);
     }
   };
 
-  const handleKey = (e) => {
-    if (e.code === "Enter") {
-      if (currentUser.displayName !== e.target.value && handleSearch()) {
-        // optional logic
-      }
-      e.target.value = null;
-      emptySearch();
+  const handleSearch = async (value) => {
+    const searchValue = value.trim().toLowerCase();
+    if (searchValue === "") {
+      // If input is empty, show all users not in chat yet
+      await fetchAllUsers();
+      return;
+    }
+
+    try {
+      const usersRef = collection(db, "users");
+      const allUsersSnapshot = await getDocs(usersRef);
+      const matches = [];
+
+      const userChatsDoc = await getDoc(doc(db, "userChats", currentUser.uid));
+      const existingChatUsers = userChatsDoc.exists()
+        ? Object.values(userChatsDoc.data()).map(chat => chat.userInfo.uid)
+        : [];
+
+      allUsersSnapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        const displayNameLower = data.displayName.toLowerCase();
+
+        if (
+          displayNameLower.includes(searchValue) &&
+          data.uid !== currentUser.uid &&
+          !existingChatUsers.includes(data.uid)
+        ) {
+          matches.push(data);
+        }
+      });
+
+      console.log(`🔍 Found ${matches.length} matching users for: "${searchValue}"`);
+      setUsers(matches);
+    } catch (error) {
+      console.error("❌ Search error:", error);
+      setErr(true);
     }
   };
 
-  const emptySearch = () => {
-    setUsername("");
-    setUser(null);
+  const coId = (uid1, uid2) => {
+    return uid1 > uid2 ? uid1 + uid2 : uid2 + uid1;
   };
 
-  const coId = (currentUser_uid, user_uid) => {
-    return currentUser_uid > user_uid
-      ? currentUser_uid + user_uid
-      : user_uid + currentUser_uid;
-  };
-
-  const handleSelect = async () => {
+  const handleSelect = async (user) => {
     const combinedId = coId(currentUser.uid, user.uid);
     try {
       const res = await getDoc(doc(db, "chats", combinedId));
-
       if (!res.exists()) {
         await setDoc(doc(db, "chats", combinedId), { messages: [] });
       }
@@ -89,6 +123,7 @@ const Search = () => {
           userInfo: {
             uid: user.uid,
             displayName: user.displayName,
+            photoURL: user.photoURL || null
           },
           date: d,
         },
@@ -99,16 +134,28 @@ const Search = () => {
           userInfo: {
             uid: currentUser.uid,
             displayName: currentUser.displayName,
+            photoURL: currentUser.photoURL || null
           },
           date: d,
         },
       });
 
-      setUser(null);
-      setUsername("");
+      console.log(`✅ New chat created or selected with ${user.displayName}`);
+      emptySearch();
     } catch (err) {
-      console.error("Error creating chat:", err);
+      console.error("❌ Error creating chat:", err);
     }
+  };
+
+  const handleInputChange = (e) => {
+    const value = e.target.value;
+    setUsername(value);
+    handleSearch(value);
+  };
+
+  const emptySearch = () => {
+    setUsername("");
+    setUsers([]);
   };
 
   return (
@@ -117,21 +164,28 @@ const Search = () => {
         <input
           type='text'
           placeholder='Add new language'
-          onKeyDown={handleKey}
-          onChange={e => setUsername(e.target.value)}
+          onChange={handleInputChange}
           value={username}
+          onClick={() => {
+            if (username.trim() === "") {
+              fetchAllUsers();
+            }
+          }}
         />
       </div>
-      {user && (
-        <div className="userChat" onClick={handleSelect}>
-          <img className="img" src={user.photoURL || add} alt="user profile" />
+
+      {users.length > 0 && users.map((user) => (
+        <div className="userChat" key={user.uid} onClick={() => handleSelect(user)}>
+          <img className="img" src={data.user.photoURL} alt="" />
           <div className="userChatInfo">
             <div className="userID">
               <span>{user.displayName}</span>
             </div>
           </div>
         </div>
-      )}
+      ))}
+
+      {err && <span style={{ color: 'red' }}>Something went wrong</span>}
     </div>
   );
 };

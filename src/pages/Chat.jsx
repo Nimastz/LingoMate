@@ -1,16 +1,14 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import Messages from './Messages'
 import Input from './Input'
 import { ChatContext } from '../context/ChatContext'
-import photo from '../img/en.png'
 
 export const Chat = () => {
   const {data} = useContext(ChatContext) 
-
   return (
     <div className='chat'>
       <div className='chatInfo'>
-      <img className="img" src={data.user?.photoURL || photo} alt="" />
+      <img className="img" src={data.user?.photoURL} alt="" />
         <span>{data.user?.displayName}</span>
         <div className='chatIcon'>
       </div>

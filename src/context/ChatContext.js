@@ -20,12 +20,11 @@ export const ChatContextProvider =({children}) => {
                         ? currentUser.uid + action.payload.uid
                         : action.payload.uid + currentUser.uid,
                     }
-                case "INITIAL_STATE":
-                    return{
-                        user:"",
-                        chatId:"null",  
-                    }
-                default: return state;    
+            case "INITIAL_STATE":
+                return INITIAL_STATE;
+
+            default:
+                return state; 
         }
     };
     const [state,dispatch] = useReducer(chatReducer,INITIAL_STATE);

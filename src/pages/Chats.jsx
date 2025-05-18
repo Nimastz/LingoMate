@@ -1,14 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react'
-import lingo from '../img/en.png'
-import { doc, getDoc, onSnapshot} from 'firebase/firestore'
+import { useContext, useEffect, useState } from 'react'
+
+import { doc, onSnapshot} from 'firebase/firestore'
 import { db } from '../firebase'
 import { AuthContext } from '../context/AuthContext'
 import { ChatContext } from '../context/ChatContext'
 
 
 const Chats = () => {
-  const imageUrls = [ ];   
-  const [isOpen, setIsOpen] = useState(false);
 
     const [chats,setChats] =useState([])
     const {currentUser} = useContext(AuthContext);
@@ -56,7 +54,7 @@ const Chats = () => {
                 onClick={() => handleSelect(chat[1].userInfo)}
               >
                 <div className='left'>
-                  <img src={lingo} alt='' />
+                  <img src={chat[1].userInfo?.photoURL} alt='' />
                 </div>
                 <div className='userChatInfo'>
                   <div className='userID'>
