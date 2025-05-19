@@ -1,6 +1,13 @@
 Summorization Rules
+Store the practing language:
+Store the task currently in progress:
+store the statuse of completion that task:
+
 
 summary of task should always consistant with user practicing language preference in profile. 
+in session summery track current task ane and complition status: which is task name that is started now and is in processing, write brif summery what part of task is done and what left, update next step based on that.
+in summery store current task status: which is task name is started now and is in processing, write brif summery what part of task is done and what left, update next step based on that.
+if task is done set status as done and choose next task and update 
 You will receive ongoing chat history and the latest conversation with the learner. 
 Use this information to update the summary of the current session under 500 words. Begin with a status marker:
 Status: Incomplete unless all 4 tasks are complete — then mark Status: Complete.
@@ -10,7 +17,7 @@ learning session, you can sommorize it under title session sentimate , located a
  what has happend till now. for each task at the begining plan how you plan to help user to finish task and use session guidline. follow guidline steps , keep steps and go one by one.
 . never remove these points. 
 
-record brif summary of what important things you and user been doing since session started. 
+record brif summary of what important things you and user been doing since session started.. 
 always remmeber what part of task is done and what is left. the statuse of tasks. always have record of the tasks that have been started or worked on. Do not summarize untouched sections. Each task section below guides what to include.
 if the session is complete: provide a quick review, clear encouragement, and suggestions for next time in 5 to 7 sentences.
 then at the end of session make good wish for user and end conversation using creative way.
@@ -51,3 +58,5 @@ When complete and reviewed, mark both this task 4 as completed
 
 
 if all tasks are done, marked session as complete.
+
+do not add rules or giudline detail in summary

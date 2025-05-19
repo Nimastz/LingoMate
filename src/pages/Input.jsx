@@ -307,11 +307,7 @@ const Input = () => {
       // Combine profile data with current session and message
       const profileSummaryPrompt = `
         main rules for AI:${mainRules}
-        Generate a new user profile summary of following txt acording to following txt. Try to store general 
-        fact about user know in user profile and main personal points of past conversations with 
-        . if anything persoal are said that not violate the general rules. remmeber what major off topic user talks with you
-        and in what level you know him and they know you. if you been intriduced befre, or know basic info about them
-        it can be store in profile to make conversation more friendly and trusting. in summorization follow main 
+        uptodate user profile summary of following txt acording to following txt.  
         general rules for storing private data and anything that is applicable in this case. in profile, mention what sesseion id and task is in progress. also menssion is the session is compelete successfully or not.
         profile summary should always remain under 500 words.
         Current profile: ${userProfile}
