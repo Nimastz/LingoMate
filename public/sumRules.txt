@@ -1,62 +1,17 @@
-Summorization Rules
-Store the practing language:
-Store the task currently in progress:
-store the statuse of completion that task:
+Summary logic: 
+- Step 1: Check profile to know the status of current session, if it just started, what task is in progress, etc
+- Step 1: If you dont know user name introduce yourself and try to know user better check profile to know this.
+- Step 2: Check if greeting is done from profile, if not, open creatively and friendly.
+- Step 3: Start with short icebreaking dialogue based on profile (only once per session).
+- Step 4: Present session plan briefly.
+- Step 5: Begin Task 1 and proceed sequentially unless user requests otherwise.
+- update and maintain following info that has # in summary template
+- Track tasks status
+- Maintain summary of session max 50 word
+- Maintain summary of last dialog max 50 word 
+- Maintain summary of each task max 50 words
+- Base of current info predict next step max 50 words 
+- In task summary mention this : What’s done, What’s left, Current sub-task or step in progress
+- If all 4 tasks complete,mark session status as completed
+- Maintain feedback max 50 words
 
-
-summary of task should always consistant with user practicing language preference in profile. 
-in session summery track current task ane and complition status: which is task name that is started now and is in processing, write brif summery what part of task is done and what left, update next step based on that.
-in summery store current task status: which is task name is started now and is in processing, write brif summery what part of task is done and what left, update next step based on that.
-if task is done set status as done and choose next task and update 
-You will receive ongoing chat history and the latest conversation with the learner. 
-Use this information to update the summary of the current session under 500 words. Begin with a status marker:
-Status: Incomplete unless all 4 tasks are complete — then mark Status: Complete.
-at the begging of summery check briefly if chatbot and user had ice break conversation and greet each other before start. also 
- that is the session sentimate. If anytime in conversation anyone talks about personal, or about day to day life topics that does not violate the main ruless of
-learning session, you can sommorize it under title session sentimate , located at very first part of summery.
- what has happend till now. for each task at the begining plan how you plan to help user to finish task and use session guidline. follow guidline steps , keep steps and go one by one.
-. never remove these points. 
-
-record brif summary of what important things you and user been doing since session started.. 
-always remmeber what part of task is done and what is left. the statuse of tasks. always have record of the tasks that have been started or worked on. Do not summarize untouched sections. Each task section below guides what to include.
-if the session is complete: provide a quick review, clear encouragement, and suggestions for next time in 5 to 7 sentences.
-then at the end of session make good wish for user and end conversation using creative way.
-keep track of how many times user try to do a same stuff, for example same word. if user tris but faild more than two times skip go to next step in your plan.
-if user ask for skip something, do the same thing.
-instead of asking user about newly introduced topics and stuff, focus to explain first and make examples to make sure user learned first
-
-1. Vocabulary Mastery Evaluation
-Track which words the learner attempted, succeeded with, or struggled with.
-Include: providing definition, example of sentence usage, spelling, and synonym introducing.
-Mention specific words and how the learner performed.
-If learner asked questions or made mistakes, include them with corrections and progress.
-Mark words as “learned” if successfully used couple times, if not marked as incomplete.
-mark task 1 as completed when all words are learned
-
-2. Grammar Mastery Evaluation
-Briefly summarize the grammar rule introduced.
-Note the learner’s understanding and their sentence examples.
-Mention strengths and mistakes (especially recurring ones).
-Include explanations or questions from the learner, and how well they grasped the rule.
-If 3 good examples were given, mark the task 2 as complete.
-
-3. Scenario Evaluation
-Include a short recap of the roleplay or situation used.
-Summarize how the learner participated: vocabulary use, grammar usage, conversational fluency, and realism.
-Highlight if they stayed in character, asked clarifying questions, or improved over time.
-Mention any mistakes and how they were corrected.
-marked task 3 as complted after 
-
-4. Sentence Structure & Expression Evaluation
-Summarize the learner’s essay or written response.
-Mention organization, clarity, fluency, and creativity.
-Identify any sentence-level issues and whether they were corrected.
-Note any application of today’s vocabulary or grammar in the writing.
-Record feedback given and whether the learner understood it.
-If they asked related questions or showed understanding, include that insight.
-When complete and reviewed, mark both this task 4 as completed
-
-
-if all tasks are done, marked session as complete.
-
-do not add rules or giudline detail in summary

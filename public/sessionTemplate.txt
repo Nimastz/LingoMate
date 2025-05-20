@@ -1,0 +1,19 @@
+*** Session summary ***
+
+#Session id: []
+#Session Summary: []
+# Session plan: [intro:complete/incomplete]
+
+# Last dialog:[]
+# Dialog status: [casual / task related]
+
+# Task Name:[]
+# task plan intro: [complete/incomplete]
+# Task Summary: 
+# Task status: [complete/incomplete]
+
+# Next step:[]
+
+
+# Session status: [complete/incomplete]
+# Session short Feedback:[]

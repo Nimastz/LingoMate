@@ -276,17 +276,23 @@ const Input = () => {
       });
 
       // AI response
-      // Load the 3 rule files
-      const [mainRes, sumRes, sessionRes] = await Promise.all([
+      // Load the rule files
+      const [mainRes, sumRes, sessionRes,sessionTemp, profileRes,profileTemp] = await Promise.all([
         fetch('/mainRules.txt'),
         fetch('/sumRules.txt'),
         fetch('/sessionRules.txt'),
+        fetch('/sessionTemplate.txt'),
+        fetch('/profileRules.txt'),
+        fetch('/profileTemplate.txt')
       ]);
 
-      const [mainRules, sumRules, sessionRules] = await Promise.all([
+      const [mainRules, sumRules, sessionRules, SessionSumTemp, profileRules, profileSumTemp] = await Promise.all([
         mainRes.text(),
         sumRes.text(),
         sessionRes.text(),
+        sessionTemp.text(),
+        profileRes.text(),
+        profileTemp.text()
       ]);
       
       // Fetch the current user's profile from Firestore
@@ -303,36 +309,36 @@ const Input = () => {
         return dateB - dateA;
       });
       const lastAiMessage = aiMessages[0]?.text || "";
+      // Construct the full profile summary prompt
+      const recentSummary = await getCurrentSessionSummary(sessionUID);
 
       // Combine profile data with current session and message
       const profileSummaryPrompt = `
-        main rules for AI:${mainRules}
-        uptodate user profile summary of following txt acording to following txt.  
-        general rules for storing private data and anything that is applicable in this case. in profile, mention what sesseion id and task is in progress. also menssion is the session is compelete successfully or not.
-        profile summary should always remain under 500 words.
-        Current profile: ${userProfile}
+        ${profileSumTemp}
+        print above profile summary fields and fill each field in respect of following info:
+        Session ID: ${sessionUID}
+        ${mainRules}
+        ${profileRules}
+        ${userProfile} 
+        ${recentSummary}
         lingoMate: ${lastAiMessage};
         User's message: ${text}
       `;
-      
+      console.log(profileSummaryPrompt);
       // Send the prompt to Gemini to generate the updated profile
       const profileResult = await model.generateContent(profileSummaryPrompt);
       const newProfileSummary = profileResult.response.text().trim();
       // Save the updated profile to the user's profile field in Firestore
       await updateUserProfile(currentUser, newProfileSummary); 
-      console.log("Profile summary:", newProfileSummary);
-
-      // Construct the full profile summary prompt
-      const recentSummary = await getCurrentSessionSummary(sessionUID);
-      
+            
       const combineText = `
-      ${mainRules}
-      ${userProfile}
-      ${sessionRules}
-      answer brifly to user mainly base on following info, respect to above rules generally:
-      ${recentSummary}
-      ${lastAiMessage};
       ${text}
+      answer above user text very brifly in respect of following info:
+      ${mainRules}
+      ${sessionRules}
+      ${profileRules}
+      ${userProfile}
+      ${recentSummary}
       `;
    
       const result = await model.generateContent(combineText);
@@ -361,11 +367,14 @@ const Input = () => {
     const currentSummary = await getCurrentSessionSummary(sessionUID);
         // Construct the full summary prompt
     const summaryPrompt = `
-    User pofile ${profileResult}
+    ${SessionSumTemp}
+    print above session summary and fill all fields according to following info:
+    Session ID: ${sessionUID}
     main rules:${mainRules}
+    pofile rules:${profileResult}
+    User pofile ${profileResult}
     summary rules:${sumRules}
     session rules:${sessionRules}
-    Summarize bellow info based on above instructions:
     current summary: ${currentSummary}
     lingoMate: ${lastAiMessage}
     User: ${text}
@@ -373,7 +382,7 @@ const Input = () => {
     // Send prompt to Gemini and get summary
     const summaryResult = await model.generateContent(summaryPrompt);
     const summary = summaryResult.response.text();
-    console.log("Retrieved summary:",  summary);
+    console.log(summary);
     // Save summary to sessionInfo
     await addSummaryToSession(sessionUID, summary);
 

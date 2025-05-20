@@ -1,0 +1,19 @@
+*** Profile Summary ***
+
+Core info:
+- #Name: [learner’s name]
+- #User mother language: [their native language]
+- #Practicing language: [language they want to learn]
+- #Level: []
+
+Technicl info:
+- #Session ID: [session ID]
+- #Current status: [complete/incomplete]
+- #Current task: [task name]
+- #Finished task: [list of finished task: none, Vocabulary, Grammar, etc.]
+
+Public info:
+- #Intro status: []
+- #Greeting status:[Complete/incomplete]
+- #Profile summary: [breif summary of non-sensitive general facts shared voluntarily about user]
+- #General thoughts: [breif summary  of user’s general feedback about the app/courses]
