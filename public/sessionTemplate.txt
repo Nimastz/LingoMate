@@ -1,19 +1,20 @@
 *** Session summary ***
+*************************************************
+# Session id: [N/A]
+# Session Summary: [session is not strated yet]
+# Session plan intro: [incomplete]
+# Session status: [incomplete]
+# Session Feedback:[no info yet]
+*************************************************
+# Last dialog:[N/A]
+# Dialog status: [marke as "Casual" if not talk about session / task related]
+*************************************************
+"This couple sentences is just explaination delete it if
+ you are generating it. for each new task in progress generate this and add it after prevouse task detail:"
+# Task Name:[N/A]
+# task plan intro: [incomplete]
+# Task Summary: [N/A]
+# Task status: [incomplete]
+# Next step:[ greeting and updating profile if needed first]
+*************************************************
 
-#Session id: []
-#Session Summary: []
-# Session plan: [intro:complete/incomplete]
-
-# Last dialog:[]
-# Dialog status: [casual / task related]
-
-# Task Name:[]
-# task plan intro: [complete/incomplete]
-# Task Summary: 
-# Task status: [complete/incomplete]
-
-# Next step:[]
-
-
-# Session status: [complete/incomplete]
-# Session short Feedback:[]

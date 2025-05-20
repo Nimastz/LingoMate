@@ -314,31 +314,32 @@ const Input = () => {
 
       // Combine profile data with current session and message
       const profileSummaryPrompt = `
-        ${profileSumTemp}
-        print above profile summary fields and fill each field in respect of following info:
         Session ID: ${sessionUID}
         ${mainRules}
         ${profileRules}
         ${userProfile} 
         ${recentSummary}
-        lingoMate: ${lastAiMessage};
-        User's message: ${text}
+        your last messsge: ${lastAiMessage};
+        User respond: ${text}
+        generate following profile template , update its fields according of above info, rules and guidlines.
+        do not include rules and giudlines logics in following template:
+        ${profileSumTemp}
       `;
-      console.log(profileSummaryPrompt);
+      console.log("old profile: ", userProfile);
       // Send the prompt to Gemini to generate the updated profile
       const profileResult = await model.generateContent(profileSummaryPrompt);
       const newProfileSummary = profileResult.response.text().trim();
       // Save the updated profile to the user's profile field in Firestore
       await updateUserProfile(currentUser, newProfileSummary); 
+      console.log("new profile: ", newProfileSummary);
             
       const combineText = `
-      ${text}
-      answer above user text very brifly in respect of following info:
       ${mainRules}
-      ${sessionRules}
-      ${profileRules}
       ${userProfile}
       ${recentSummary}
+      your last messege: ${lastAiMessage};
+      generate answer of following user text very brifly in respect of above info:
+      userrespond ${text}
       `;
    
       const result = await model.generateContent(combineText);
@@ -367,8 +368,6 @@ const Input = () => {
     const currentSummary = await getCurrentSessionSummary(sessionUID);
         // Construct the full summary prompt
     const summaryPrompt = `
-    ${SessionSumTemp}
-    print above session summary and fill all fields according to following info:
     Session ID: ${sessionUID}
     main rules:${mainRules}
     pofile rules:${profileResult}
@@ -376,8 +375,10 @@ const Input = () => {
     summary rules:${sumRules}
     session rules:${sessionRules}
     current summary: ${currentSummary}
-    lingoMate: ${lastAiMessage}
-    User: ${text}
+    your last messege: ${lastAiMessage}
+    User respond: ${text}
+    generate a following session summary template and fill all fields in respect to above info:
+    ${SessionSumTemp}
     `;
     // Send prompt to Gemini and get summary
     const summaryResult = await model.generateContent(summaryPrompt);
